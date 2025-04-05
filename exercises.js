@@ -18,6 +18,12 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
 
   // Modify the line of code BELOW to run a different exercise
   exercise_01();
+  exercise_02();
+  exercise_03();
+  exercise_04();
+  exercise_05();
+
+  
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +37,8 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World!");
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +56,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let myAge = 34;
+const myName = "Blerta";
+console.log(myAge, myName);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,8 +85,11 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+let sum = num1 + num2;
+let subtract = num1 - num2;
+let multiply = num1 * num2;
+let divide = num1 / num2;
+console.log(sum, subtract, multiply, divide);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -94,8 +106,12 @@ function exercise_04() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code here";
+let x = 5;
+console.log(typeof(x));
+x = "five";
+console.log(typeof(x));
+x = true;
+console.log(typeof(x));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +129,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let isAvailable = true;
+isAvailable = !isAvailable;
+console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
