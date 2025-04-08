@@ -95,3 +95,4 @@ Exercise solutions are in the `/solution` folder
     - Creating and manipulating dates.
     - Methods for accessing parts of a date, such as `getFullYear`, `getMonth`, `getDate`, etc.
     - Understanding how JavaScript stores dates as milliseconds since the epoch.
+# JavaScript-Syntax-Variables-and-Data-Types-Exercise
