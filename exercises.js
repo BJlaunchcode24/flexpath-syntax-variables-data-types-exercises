@@ -1,3 +1,5 @@
+import { get } from "http";
+import { text } from "stream/consumers";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -22,6 +24,30 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   exercise_03();
   exercise_04();
   exercise_05();
+  exercise_06();
+  exercise_07();
+  exercise_08();
+  exercise_09();
+  exercise_10();
+  exercise_11();
+  exercise_12();
+  exercise_13();
+  exercise_14();
+  exercise_15();
+  exercise_16();
+  exercise_17();
+  exercise_18();
+  exercise_19();
+  
+
+
+
+
+
+
+
+
+
 
   
   // Modify the line of code ABOVE to run a different exercise
@@ -156,7 +182,18 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let message = " Welcome Home! ";
+let upper;
+upper = message.toUpperCase();
+console.log(upper);
+let lower;
+lower = message.toLowerCase();
+console.log(lower);
+let length;
+console.log("The length of my message is", message.length, "characters" );
+
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -183,7 +220,11 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+const name = "Blerta";
+const greeting = `Hello, ${name}! Welcome to JavaScript!`;
+console.log(greeting);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -204,7 +245,10 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+let notAssigned;
+console.log("Undefined: ", notAssigned);
+let nullValue = null;
+console.log("Null: ", nullValue);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -224,10 +268,16 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
-  // CODE IN THE OPEN LINES ABOVE
+let book = {
+  title: "The Monk Who Sold His Ferrari",
+  author: "Robin Sharma",
+  publishedYear: 2008,
+};
+console.log(book);
+// CODE IN THE OPEN LINES ABOVE
 }
+
+
 
 function exercise_10() {
   /* 
@@ -244,7 +294,13 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "The Monk Who Sold His Ferrari",
+    author: "Robin Sharma",
+    publishedYear: 2008,
+  };
+  console.log("Title (dot):", book.title);
+  console.log("Author (bracket):", book.author);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -266,7 +322,16 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "The Monk Who Sold His Ferrari",
+    author: "Robin Sharma",
+    publishedYear: 2008,
+  };
+  book.publishedYear = 2008;
+  book["genre"] = "Detective Fiction";
+  console.log("Look at these changes!: ", book);
+  
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -285,8 +350,16 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+let book = {
+    title: "The Monk Who Sold His Ferrari",
+    author: "Robin Sharma",
+    publishedYear: 2008,
+  };
+  console.log("Before delete:", book);
+  delete book.author;
+  console.log("After delete:", book);console.log("Before delete:", book);
+  delete book.author;
+  
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -316,8 +389,9 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
-
+console.log("Original Name: ", original.name);
+copy.name = "Bob" ;
+console.log("Original Name: ",original.name);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -336,7 +410,9 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+const currentDate = new Date();
+console.log("Current Date and Time: ", currentDate);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -358,7 +434,12 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const currentDate = new Date();
+  console.log("Year: " , currentDate.getFullYear());
+  console.log("Month: " , currentDate.getMonth() + 1); // Months are zero-indexed 
+  console.log("Date: " , currentDate.getDay());
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -383,7 +464,11 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const birthday = new Date(1991, 1, 13);
+  let birtdayString = birthday.toDateString(); // Febbruary 13, 1991 (months are zero-indexed);
+  console.log("Birthday: ", birtdayString);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -410,7 +495,14 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const currentDate = new Date;
+  const timeDifference = currentDate - pastDate;
+  const timeToDays = timeDifference / (1000 * 60 * 60 * 24);
+  const daysDifference = Math.ceil(timeToDays);
+  console.log("Day Difference:", daysDifference);
+
+ 
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -441,7 +533,10 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  const withPlus = "With Plus Operator: " + msgPart1 + " " + msgPart2 + "!";
+  console.log(withPlus);
+  const withTemplateLiteral = `With Template Literal: ${msgPart1} ${msgPart2}!`;
+  console.log(withTemplateLiteral);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -474,7 +569,9 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Includes 'JavaScript':", text.includes("JavaScript"));
+  console.log("Includes 'Python':", text.includes("Python"));
+  console.log("Includes 'javascript':", text.includes("javascript"));
 
   // CODE IN THE OPEN LINES ABOVE
 }
